@@ -2,6 +2,7 @@ use serde::Serialize;
 use strum_macros::{Display, EnumString};
 use uuid::Uuid;
 
+#[derive(Serialize, EnumString, Display, Eq, PartialEq)]
 pub enum TaskState {
     NotStarted,
     InProgress,
